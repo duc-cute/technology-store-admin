@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <i class="fa-brands fa-asymmetrik header__logo-icon"></i>
+                <a href=""><p class="header__logo-text">Dev-House</p></a>
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item navbar__menu-item-js">
+                    <div class="navbar__menu-header">
+                        <i class="fa-brands fa-opencart"></i>
+                        <span>Đơn hàng</span>
+                        <i class="fa-solid fa-angle-down navbar__icon-down"></i>
+                        <i class="fa-solid fa-angle-up navbar__icon-up"></i>
+                    </div>
+                    <ul class="menu__product-list menu__product-list-js">
+                        <li class="menu__product-item">Đơn hàng(cũ)</li>
+                        <li class="menu__product-item item__effect">Danh sách đơn hàng</li>
+                        <li class="menu__product-item">Đổi trả bảo hành</li>
+                        <li class="menu__product-item">Quản lí hóa đơn</li>
+                        <li class="menu__product-item item__effect">Đơn hàng đổi trả</li>
+                        <li class="menu__product-item">Lịch sử đơn hàng</li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <div class="navbar__menu-header">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Sản phẩm</span>
+                        <i class="fa-solid fa-angle-down navbar__icon-down"></i>
+                    </div>
+                </li>
+                <li class="navbar__menu-item">
+                    <div class="navbar__menu-header">
+                        <i class="fa-solid fa-arrows-to-circle"></i>
+                        <span>Quản lí sản phẩm</span>
+                        <i class="fa-solid fa-angle-down navbar__icon-down"></i>
+                    </div>
+                </li>
+                <li class="navbar__menu-item">
+                    <div class="navbar__menu-header">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span>Quản lí giá</span>
+                        <i class="fa-solid fa-angle-down navbar__icon-down"></i>
+                    </div>
+                </li>
+                <li class="navbar__menu-item">
+                    <div class="navbar__menu-header">
+                        <i class="fa-solid fa-house-user"></i>
+                        <span>Quản lí kho</span>
+                        <i class="fa-solid fa-angle-down navbar__icon-down"></i>
+                    </div>
+                </li>
+                <li class="navbar__menu-item">
+                    <div class="navbar__menu-header">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Trung tâm phát triển</span>
+                        <i class="fa-solid fa-angle-down navbar__icon-down"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <header class="shop__name">Giao diện phần mềm bán hàng</header>
+            <div class="menu__shop">
+               <ul class="menu__shop-list">
+                    <li class="menu__shop-item">
+                        <h2 class="menu__shop-header">Tất cả</h2>
+                        <div class="menu__shop-info">0 đơn hàng</div>
+                    </li>
+                    <li class="menu__shop-item">
+                        <h2 class="menu__shop-header">Đang xử lý</h2>
+                        <div class="menu__shop-info">0/0 đơn hàng</div>
+                    </li>
+                    <li class="menu__shop-item">
+                        <h2 class="menu__shop-header">Chờ xác nhận</h2>
+                        <div class="menu__shop-info">0/0 đơn hàng</div>
+                    </li>
+                    <li class="menu__shop-item">
+                        <h2 class="menu__shop-header">Đang vận chuyển</h2>
+                        <div class="menu__shop-info">0 đơn hàng</div>
+                    </li>
+                    <li class="menu__shop-item">
+                        <h2 class="menu__shop-header">Đã giao hàng</h2>
+                        <div class="menu__shop-info">0 đơn hàng</div>
+                    </li>
+                    <li class="menu__shop-item">
+                        <h2 class="menu__shop-header">Đã hủy</h2>
+                        <div class="menu__shop-info">0 đơn hàng</div>
+                    </li>
+                    
+               </ul>
+            </div>
+            <div class="shop__sales">
+                <div class="product__chart">
+                    <div class="product__chart-header">Lượt khách ghé thăm</div>
+                    <div class="product__chart-numbers">
+                            <i class="fa-solid fa-chart-column product__chart-icon color-blue"></i>
+                            <div class="product__chart-percent bg-blue">-8%</div>
+                    </div>
+                </div>
+                <div class="product__chart">
+                    <div class="product__chart-header">Lượt khách ghé thăm</div>
+                    <div class="product__chart-numbers">
+                            <i class="fa-solid fa-chart-column product__chart-icon color-green"></i>
+                            <div class="product__chart-percent bg-violet">+30%</div>
+                    </div>
+                </div>
+                <div class="product__chart">
+                    <div class="product__chart-header">Lượt khách ghé thăm</div>
+                    <div class="product__chart-numbers">
+                            <i class="fa-solid fa-chart-column product__chart-icon color-violet"></i>
+                            <div class="product__chart-percent bg-red ">+12%</div>
+                    </div>
+                </div>
+                <div class="product__chart">
+                    <div class="product__chart-header">Lượt khách ghé thăm</div>
+                    <div class="product__chart-numbers">
+                            <i class="fa-solid fa-chart-column product__chart-icon color-red"></i>
+                            <div class="product__chart-percent bg-green">+10%</div>
+                    </div>
+                </div>
+                
+               
+            </div>
+            <div class="menu__product">
+                <div class="menu__id-item">
+                   <span class="menu__id-header">Mã đơn hàng</span>
+                   <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="menu__id-access">
+                    <i class="fa-solid fa-magnifying-glass menu__id-icon"></i>
+                    <input type="text" name="" id="" class="menu__id-input" placeholder="Nhập mã đơn hàng tối đa 20 kí tự">
+                </div>
+                <div class="menu__id-item">
+                   <span class="menu__id-header">Nhãn đơn hàng</span>
+                   <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="menu__id-item">
+                    <span class="menu__id-header">Ngày đặt hàng</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="menu__id-item">
+                    <span class="menu__id-header">Bộ lọc khác</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                
+
+            </div>
+           
+            <div class="product__info">
+                <div class="product__name-id">Mã đơn hàng:1004</div>
+                <table class="product__info-table">
+                    <tr>
+                      <th>Mã đơn hàng</th>
+                      <th>Hình thức giao hàng</th>
+                      <th>Trạng thái</th>
+                      <th>Số lượng</th>
+                      <th class="text-right">
+                        Giá
+                        <i class="fa-solid fa-circle-info icon__info"></i>
+                      </th>
+                      <th>
+                        Hạn xác nhận
+                        <i class="fa-solid fa-left-right icon__time"></i>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td class="color-blue">15012003</td>
+                      <td>Chuyển phát nhanh</td>
+                      <td>
+                        <span class="product__status">
+                            Khách hàng đã thanh toán</td>
+                        </span>
+                      <td class="text-right">1</td>
+                      <td class="text-right">1.000.000đ</td>
+                      <td>Ngày 10/4/2003</td>
+                    </tr>
+                    <tr>
+                      <td class="color-blue">15012003</td>
+                      <td>Chuyển phát nhanh</td>
+                      <td>
+                        <span class="product__status">
+                            Đã giao cho chuyển phát nhanh</td>
+                        </span>
+                      <td class="text-right">3</td>
+                      <td class="text-right">0đ</td>
+                      <td>Ngày 15/01/2003</td>
+                    </tr>
+                    <tr>
+                      <td class="color-blue">15012003</td>
+                      <td>Giao hàng nước ngoài</td>
+                      <td>
+                        <span class="product__status">
+                            Đang đợi hàng</td>
+                        </span>
+                      <td class="text-right">5</td>
+                      <td class="text-right">5.000.000đ</td>
+                      <td>Ngày mai 08:00:00</td>
+                    </tr>
+                 
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        var subMenuBtn=document.querySelector('.navbar__menu-item-js');
+        var MenuBtndown=document.querySelector('.navbar__icon-down');
+        var MenuBtnup=document.querySelector('.navbar__icon-up');
+        var subMenu=document.querySelector('.menu__product-list-js');
+        function showSubMenuProduct() {
+            subMenu.classList.add('open');
+            MenuBtndown.classList.add('close');
+            MenuBtnup.classList.add('open');
+        }
+        function hideSubMenuProduct() {
+            subMenu.classList.remove('open');
+            MenuBtnup.classList.remove('open');
+            MenuBtndown.classList.remove('close');
+
+        }
+        subMenuBtn.addEventListener('click',function() {
+            var contain=subMenu.classList.contains('open');
+            if(contain) {
+                hideSubMenuProduct();
+
+            }else {
+                showSubMenuProduct();
+            }
+        })
+        subMenu.addEventListener('click',function(e) {
+            e.stopPropagation();
+        })
+    </script>
+</body>
+</html>
